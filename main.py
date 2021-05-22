@@ -1,10 +1,10 @@
 from application import salary
 from application.db import people
-from datetime import datetime
+from datetime import date
 
 def date_now():
-    current_datetime = datetime.now()
-    print(current_datetime)
+    current_date = date.today()
+    print(current_date)
 
 if __name__ == '__main__':
     salary.calculate_salary()
