@@ -1,8 +1,6 @@
-
 from application import salary
 from application.db import people
 from datetime import datetime, date
-
 
 def decorator(self):
     def date_now_logger(function):
