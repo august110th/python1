@@ -5,11 +5,11 @@ from datetime import datetime, date
 
 
 def date_now_logger(function):
-    def logger(**kwargs):
+    def logger(self):
         result1 = function()
         with open('C:\logs_python.txt', 'a', encoding='utf-8') as f:
-            f.write(f'функция запущена: {datetime.now()}, название функции: {function.__name__}, параметры: {kwargs}, результат: {result1} \n')
-        return result1
+            f.write(f'функция запущена: {datetime.now()}, название функции: {function.__name__}, параметры: , результат: {result1} \n')
+        return function
     return logger
 
 if __name__ == '__main__':
@@ -20,4 +20,4 @@ if __name__ == '__main__':
 def date_now():
     result = date.today()
     return result
-date_now(x=1)
+date_now()
