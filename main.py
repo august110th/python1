@@ -1,9 +1,8 @@
 import datetime
-
 from application import salary
 from application.db import people
-from datetime import datetime, date, time
-from datetime import time
+from datetime import datetime, date
+
 
 def date_now_logger(function):
     def logger(**kwargs):
