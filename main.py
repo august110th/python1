@@ -22,4 +22,4 @@ def date_now(*args, **kwargs):
     result = date.today()
     return result
 
-date_now(1,2, b='for')
+date_now(5,9, b='for')
